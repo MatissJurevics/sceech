@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCEETCH</title>
+</head>
+<body>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: red;
+            color: blue;
+        }
+        .spinny {
+            animation: spin 2s linear infinite;
+            
+        }
+        .spinnyhover:hover {
+            animation: spin 2s linear infinite;
+        }
+        .pulsy {
+            animation: pulse 1s linear infinite;
+            transform: rotate(12deg);
+        }
+        .fullscreenhaha:hover {
+            width: 100vw;
+            height: 100vh;
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin: 0;
+            padding: 0;
+
+        }
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            50% {
+                transform: translateY(30vh) translateX(30vw) rotate(180deg);
+                scale: 0.2;
+            }
+            75% {
+                transform: translateY(-80vh) rotate(270deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        @keyframes pulse {
+            0% {
+                transform: scale(1) rotate(12deg);
+            }
+            50% {
+                transform: scale(1.2) rotate(12deg);
+            }
+            100% {
+                transform: scale(1) rotate(12deg);
+            }
+            
+        }
+
+    </style>
+    <h1 class="spinnyhover">hEY gUYS, wELCOME tO mY vERY cOOL sTARTUP 💵💵💵</h1>
+    <h2 class="spinnyhover">WE DO A LOT, HERES SOME OF IT</h2>
+    <img style="position: absolute; top: 5vh; right: 20vw; width: 30em;" src="./assets/farmerbad.png" alt="">
+    <p class="fullscreenhaha"  style="background-color: aquamarine; width: 10vw; margin-left: auto;">At Sceetch, wE'vE cReAtEd a nEw wAy tO cApTuRe tHe wOrld wIth a bOlt oF inNOvAtioN! iMaginE a gUy iN sPaCe, uSIng a SaMsUnG S24 uLtrA wIth a 100x zOom, rEcordIng pEOpLe iN tHeIr gArDeNs—tHaT's rIgHt, rEcordIng pEOpLe fRoM sPaCe! wE tAke tHis uNiqUe pErSpEctive aND tUrN iT iNtO a cREAtive tOOl fOr sEcurIty, aRchIvIng, aND eNtertAinMeNt. wE bRIng yOu sOmeTHing tRULy oUt oF tHis wOrLD!</p>
+    <h2 class="spinnyhover">hERE'S sOME oF oUR cOOL pRODUCTS</h2>
+    <h1 style="margin-left: auto; margin-right: auto;">"Farmers have enough money" - A trustable source</h1>
+    <h4><i style="text-decoration: underline; cursor: pointer;">MEEt the team</i></h4>
+    <button style="position: absolute; bottom: 20vh; right: 202px;"><a href="./sceach.html">Click here to do the thing</a></button>
+    <div style="position: absolute; top: 20vh; left: 30vw;">
+        <img src="./assets/man-using-laptop-in-garden-KNTF05262.jpg" alt="Were watching you">
+        <p style="color: chartreuse;">I KNOW WHERE YOU LIVE TIMOTHY BERGIN</p>
+    </div>
+    <img src="assets/Artist_s_impression_of_the_James_Webb_Space_Telescope_pillars.jpg" alt="">
+    <img class="spinny" src="./assets/20240812_181233.jpg" alt="nathaniel" style="margin-left: auto; width: 20em;">
+    <a style="width: 5rem; height: 5rem; background: orchid; position: fixed; top: 10px; right: 10px;" href="./assets/notsus.zip">I HAVE A GIFT, CLICK ME</a>
+
+    <iframe class="pulsy" style="position: absolute; top: 50%; left: 50%;" width="560" height="315" src="https://www.youtube.com/embed/dEI7oX0XxJw?si=g7vTrRN1H6yGiRCg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" autoplay allowfullscreen></iframe>
+
+    <script>
+        function notifyMe() {
+  if (!("Notification" in window)) {
+    // Check if the browser supports notifications
+    alert("This browser does not support desktop notification");
+  } else if (Notification.permission === "granted") {
+    // Check whether notification permissions have already been granted;
+    // if so, create a notification
+    const notification = new Notification("Hi there!");
+    // …
+  } else {
+    // We need to ask the user for permission
+    Notification.requestPermission().then((permission) => {
+      // If the user accepts, let's create a notification
+      if (permission === "granted") {
+        const notification = new Notification("Hi there!");
+        // …
+      }
+    });
+  }
+
+  // At last, if the user has denied notifications, and you
+  // want to be respectful there is no need to bother them anymore.
+}
+notifyMe();
+// generate a random number between 1 and 10 every 3 seconds, if the number is 5, alert the user
+setInterval(() => {
+    const randomNumber = Math.floor(Math.random() * 30) + 1;
+    if (randomNumber === 5) {
+        alert(`Hey, you. You’re finally awake. You were trying to cross the border, right? Walked right into that Imperial ambush, same as us, and that thief over there.
+
+Damn you Stormcloaks. Skyrim was fine until you came along. Empire was nice and lazy. If they hadn’t been looking for you, I could’ve stolen that horse and been halfway to Hammerfell. You there—you and me—we shouldn’t be here. It’s these Stormcloaks the Empire wants.
+
+We’re all brothers and sisters in binds now, thief.
+
+Shut up back there!
+
+What’s wrong with him, huh?
+
+Watch your tongue! You’re speaking to Ulfric Stormcloak, the true High King!
+
+Ulfric? The Jarl of Windhelm? You’re the leader of the rebellion. But if they’ve captured you… Oh gods, where are they taking us?
+
+I don’t know where we’re going, but Sovngarde awaits.
+
+No, this can’t be happening. This isn’t happening.
+
+Hey, what village are you from, horse thief?
+
+Why do you care?
+
+A Nord’s last thoughts should be of home.
+
+Rorikstead. I’m… I’m from Rorikstead.
+
+General Tullius, sir! The headsman is waiting!
+
+Good. Let’s get this over with.
+
+Shor, Mara, Dibella, Kynareth, Akatosh. Divines, please help me.
+
+Look at him. General Tullius, the military governor. And it looks like the Thalmor are with him. Damn elves. I bet they had something to do with this.
+
+This is Helgen. I used to be sweet on a girl from here. Wonder if Vilod is still making that mead with juniper berries mixed in. Funny… when I was a boy, Imperial walls and towers used to make me feel so safe.
+
+Who are they, Daddy? Where are they going?
+
+You need to go inside, little cub.
+
+Why? I want to watch the soldiers.
+
+Inside the house. Now.
+
+Yes, Papa.
+
+Why are we stopping?
+
+Why do you think? End of the line. Let’s go. Shouldn’t keep the gods waiting for us.
+
+No, wait! We’re not rebels!
+
+Face your death with some courage, thief.
+
+You’ve got to tell them! We weren’t with you! This is a mistake!
+
+Anyone else feel like running?
+
+Wait. You there. Step forward.
+
+Who are you?
+
+You picked a bad time to come home to Skyrim, kinsman. Captain, what should we do? He’s not on the list.
+
+Forget the list. He goes to the block.
+
+By your orders, Captain. I’m sorry. We’ll make sure your remains are returned to High Rock. Follow the Captain, prisoner.
+
+Ulfric Stormcloak. Some here in Helgen call you a hero, but a hero doesn’t use a power like the Voice to murder his king and usurp his throne. You started this war, plunged Skyrim into chaos, and now the Empire is going to put you down and restore the peace.
+
+What was that?
+
+It’s nothing. Carry on.
+
+Yes, General Tullius. Give them their last rites.
+
+As we commend your souls to Aetherius, blessings of the Eight Divines upon you—
+
+For the love of Talos, shut up and let’s get this over with.
+
+As you wish.
+
+Come on! I haven’t got all morning.
+
+Next, the renegade from Cyrodiil!
+
+There it is again. Did you hear that?
+
+I said, next prisoner!
+
+To the block, prisoner. Nice and easy.
+
+What in Oblivion is that?!
+
+Sentries, what do you see?!
+
+It’s in the clouds!
+
+Dragon!
+
+Hey, kinsman! Get up! Come on, the gods won’t give us another chance! This way!`);
+    } else {
+        console.log(randomNumber)
+    }
+}, 3000);
+    </script>
+</body>
+</html>
